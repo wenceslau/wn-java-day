@@ -3,8 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.wenceslau.javaday.consumer</groupId>
-    <artifactId>api-consumer</artifactId>
+
+    <groupId>com.wenceslau.javaday.models</groupId>
+    <artifactId>provider-objects</artifactId>
 
     <parent>
         <groupId>com.wenceslau.javaday</groupId>
@@ -17,13 +18,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.wenceslau.javaday.models</groupId>
-            <artifactId>provider-objects</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

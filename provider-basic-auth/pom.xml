@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.wenceslau.javaday.consumer</groupId>
-    <artifactId>api-consumer</artifactId>
-
     <parent>
         <groupId>com.wenceslau.javaday</groupId>
         <artifactId>wn-java-day</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <groupId>com.wenceslau.javaday.provider.basicauth</groupId>
+    <artifactId>provider-basic-auth</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,6 +19,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.wenceslau.javaday.models</groupId>
             <artifactId>provider-objects</artifactId>

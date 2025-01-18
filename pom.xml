@@ -11,8 +11,10 @@
 
     <modules>
         <module>api-consumer</module>
-        <module>api-provider-no-auth</module>
-        <module>models</module>
+        <module>provider-no-auth</module>
+        <module>provider-basic-auth</module>
+        <module>provider-jwt-auth</module>
+        <module>provider-objects</module>
     </modules>
 
     <parent>

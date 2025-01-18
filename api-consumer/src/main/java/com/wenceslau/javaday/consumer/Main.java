@@ -27,17 +27,14 @@ public class Main {
             var currency = "USD";
             var language = "en";
 
-            var response = balanceClient.getBalancePath(strDate, account, currency, language);
+            var response = balanceClient.getBalanceJwtAuthPath(strDate, account, currency, language);
             System.out.println(response);
 
             var request = new BalanceRequest(date, account, currency);
-            response = balanceClient.getBalanceBody(request, language);
+            response = balanceClient.getBalanceJwtAuthBody(request, language);
             System.out.println(response);
 
-            response = balanceClient.getBalanceSpringParams(request, language);
-            System.out.println(response);
-
-            response = balanceClient.getBalanceParams(date, account, currency, language);
+            response = balanceClient.getBalanceJwtAuthParams(request, language);
             System.out.println(response);
 
         };
